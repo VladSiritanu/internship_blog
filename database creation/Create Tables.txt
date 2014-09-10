@@ -1,0 +1,6 @@
+CREATE TABLE entries (
+entry_id					INT PRIMARY KEY AUTO_INCREMENT,
+entry_title				VARCHAR(150),
+entry_text				Text,
+entry_date				TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)

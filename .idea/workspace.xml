@@ -35,7 +35,7 @@
       <file leaf-file-name="update.inc.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.6681922" vertical-offset="460" max-vertical-offset="1334">
+            <state line="36" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.6830409" vertical-offset="460" max-vertical-offset="1334">
               <folding>
                 <marker date="1410358310436" expanded="true" signature="530:587" placeholder="INSERT INTO ..." />
               </folding>
@@ -200,7 +200,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -294,7 +294,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.6681922" vertical-offset="460" max-vertical-offset="1334">
+        <state line="36" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.6830409" vertical-offset="460" max-vertical-offset="1334">
           <folding>
             <marker date="1410358310436" expanded="true" signature="530:587" placeholder="INSERT INTO ..." />
           </folding>
