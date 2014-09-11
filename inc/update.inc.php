@@ -1,12 +1,18 @@
 <?php
+//Include the function so ypu can create a URL
+include_once 'function.inc.php';
 
 //Check  if there is any post request,which submit
 //was sent,if the required fields are not empty
 if($_SERVER['REQUEST_METHOD']=='POST'
     && $_POST['submit']=='Save Entry'
+    && !empty($_POST['page'])
     && !empty($_POST['title'])
     && !empty($_POST['entry']))
 {
+    //Create a URL to save in the database
+    $url = makeURL($_POST['title']);
+
     //Include database credentials and connect to it
     include_once 'db.inc.php';
     try{
@@ -15,19 +21,18 @@ if($_SERVER['REQUEST_METHOD']=='POST'
     {
         echo 'Connection failed : ', $e->getMessage();
     }
-//Save the entry into the database
-    $sql = "INSERT INTO entries (entry_title, entry_text) VALUES(?,?)";
+    //Save the entry into the database
+    $sql = "INSERT INTO entries (page,entry_title, entry_text,url) VALUES(?,?,?,?)";
     $stmt = $db->prepare($sql);
-    $stmt->execute(array($_POST['title'],$_POST['entry']));
+    $stmt->execute(array($_POST['page'],$_POST['title'],$_POST['entry'],$url));
     $stmt->closeCursor();
 
-//Get the ID of the entry we just saved
-    $id_obj = $db->query("SELECT LAST_INSERT_ID()");
-    $id = $id_obj->fetch();
-    $id_obj->closeCursor();
+    // Sanitize the page information dor use in the  success URL
+    $page = htmlentities(strip_tags($_POST['page']));
+
 
 //Send the user to the new entry
-    header('Location: ../?id='.$id[0]);
+    header('Location: /internship_blog/' . $page . '/'. $url);
     exit;
 }
 //If any of the condition aren't met, send the user

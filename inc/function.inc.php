@@ -1,42 +1,52 @@
 <?php
 
-function retrieveEntries($db, $id=NULL)
+function retrieveEntries($db,$page, $url=NULL)
 {
-    //If an entry ID was supplied, load the associated
-    //entry
-    if(isset($id))
+    //If an entry URL was supplied, load the associated entry
+    if(isset($url))
     {
-       $sql = "SELECT entry_title,entry_text
+       $sql = "SELECT entry_id,page,entry_title,entry_text
                 FROM entries
-                WHERE entry_id=?
+                WHERE url=?
                 LIMIT 1";
+
         $stmt = $db->prepare($sql);
-        $stmt->execute(array($_GET['id']));
+        $stmt->execute(array($url));
 
         //Save the returned entry array
         $result = $stmt->fetch();
 
         //Set the fulldisp flag for a single entry
         $fulldisp = 1;
+
     }
 
-    //If no entry id was supplied, load all entry titles
+    //If no entry URL was supplied, load all entry titles for the page
     else
     {
         // Query text
-        $sql = "SELECT entry_id,entry_title
+        $sql = "SELECT entry_id,page,entry_title,entry_text,url
                 FROM entries
+                WHERE page=?
                 ORDER BY entry_date DESC";
+        $stmt = $db->prepare($sql);
+        $stmt->execute(array($page));
+        $result = NULL;
         // Loop through returned results and store as an array
-        foreach($db->query($sql) as $row)
-        {
-            $result[] = array(
-                            'id' => $row['entry_id'],
-                            'title' => $row['entry_title']
-            );
-        }
-        //Set the fulldisp falg for multiple entries
-        $fulldisp = 0;
+       while($row = $stmt->fetch())
+       {
+           if($page=='blog')
+           {
+           $result[] = $row;
+           $fulldisp = 0;
+           }
+           else
+           {
+               $result = $row;
+               $fulldisp = 1;
+           }
+       }
+
 
         //IF no entries were returned, display a default
         //messafe and set fulldisp flag to display a
@@ -45,8 +55,8 @@ function retrieveEntries($db, $id=NULL)
         {
             $fulldisp = 1;
             $result= array(
-                        'title' => 'No Entries Yet',
-                        'entry' => '<a href="/admin.php">Post an entrhy!</a>'
+                        'entry_title' => 'No Entries Yet',
+                        'entry_text' => '<a href="/internship_blog/admin.php?page=' . $page . '">Post an entry!</a>'
             );
         }
 
@@ -64,7 +74,7 @@ function sanitizeData($data)
     if(!is_array($data))
     {
         //Remove all tags except <a> tags
-        return strip_tags($data,"<a>");
+        return strip_tags($data,"<a><br>");
     }
     //If $data is an array, process each element
     else
@@ -73,5 +83,17 @@ function sanitizeData($data)
         return array_map('sanitizeData',$data);
     }
 }
+
+function makeURL($title)
+{
+    $patterns = array(
+        '/\s+/',
+        '/(?!-)\W+/'
+    );
+    $replacements = array('-','');
+    return preg_replace($patterns,$replacements,strtolower($title));
+
+}
+
 
 ?>

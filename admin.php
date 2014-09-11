@@ -1,3 +1,13 @@
+<?php
+if(isset($_GET['page']))
+{
+    $page = htmlentities(strip_tags($_GET['page']));
+}
+else
+{
+    $page = 'blog';
+}
+?>
 
 <!DOCTYPE html
     PUBLIC "-//W3C//DTD XHTML 1.0  Strict//EN"
@@ -15,7 +25,7 @@
 <body>
     <h1>Simple Blog Application</h1>
 
-    <form action="inc/update.inc.php" method="post">
+    <form action="../inc/update.inc.php" method="post">
         <fieldset>
             <legend>New Entry Submission</legend>
             <label>Title
@@ -24,6 +34,7 @@
             <label>Entry
                 <textarea name="entry" rows="10" cols="45"></textarea>
             </label>
+            <input type="hidden" name="page" value="<?php echo $page ?>" />
             <input type="submit" name="submit" value="Save Entry"/>
             <input type="submit" name="submit" value="Cancel"/>
         </fieldset>
