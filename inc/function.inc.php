@@ -95,5 +95,17 @@ function makeURL($title)
 
 }
 
+function adminlinks($page, $url)
+{
+    //Format the link to be followed for each option
+    $edidURL = "/internship_blog/admin/$page/$url";
+    $deleteURL = "/internship_blog/admin/delete/$url";
+
+    //Make a hyperlink and add it to an array
+    $admin['edit'] = "<a href=\"$editURL\">edit</a>";
+    $admin['delete'] = "<a href=\"$deleteURL\">delete</a>";
+
+    return $admin;
+}
 
 ?>

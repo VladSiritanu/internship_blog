@@ -17,7 +17,7 @@ else
 <head>
     <meta http-equiv="Content-Type"
           content="text/html;charset=utf-8"/>
-    <link rel="stylesheet" href="css/default.css" type="text/css"/>
+    <link rel="stylesheet" href="/internship_blog/css/default.css" type="text/css"/>
 
     <title>Blog</title>
 </head>
