@@ -12,7 +12,6 @@
     if(isset($_GET['page']))
     {
         $page= htmlentities(strip_tags($_GET['page']));
-        print_r($page);
     }
     else
 {
@@ -60,9 +59,16 @@
             {
                 //get the URL if one wasn't passed
                 $url = (isset($url)) ? $url : $entries['url'];
+
+                //Build the admin lings
+                $admin = adminlinks($page,$url);
              ?>
                 <h2><?php echo $entries['entry_title']?></h2>
                 <p><?php echo $entries['entry_text'] ?></p>
+                <p>
+                    <?php echo $admin['edit'] ?>
+                    <?php if($page=='blog') echo $admin['delete'] ?>
+                </p>
                 <?php if($page=='blog'): ?>
                     <p class="backlink">
                         <a href="./">Back to Latest Entries</a>

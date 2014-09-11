@@ -21,6 +21,30 @@ if($_SERVER['REQUEST_METHOD']=='POST'
     {
         echo 'Connection failed : ', $e->getMessage();
     }
+    //Edit an existing entry
+    if(!empty($_POST['id']))
+    {
+        $sql = "UPDATE entries
+                SET entry_title=?, entry_text=?, url=?
+                WHERE entry_id=?
+                LIMIT 1";
+        $stmt = $db->prepare($sql);
+        $stmt->execute(
+            array(
+                $_POST['title'],
+                $_POST['entry'],
+                $url,
+                $_POST['id']
+            )
+        );
+        $stmt->closeCursor();
+        $page = htmlentities(strip_tags($_POST['page']));
+        header('Location: /internship_blog/' . $page . '/'. $url);
+    }
+
+
+    //Create a new entry
+    else{
     //Save the entry into the database
     $sql = "INSERT INTO entries (page,entry_title, entry_text,url) VALUES(?,?,?,?)";
     $stmt = $db->prepare($sql);
@@ -33,8 +57,9 @@ if($_SERVER['REQUEST_METHOD']=='POST'
 
 //Send the user to the new entry
     header('Location: /internship_blog/' . $page . '/'. $url);
-    exit;
+    }
 }
+
 //If any of the condition aren't met, send the user
 //to the mai page
 else

@@ -98,7 +98,7 @@ function makeURL($title)
 function adminlinks($page, $url)
 {
     //Format the link to be followed for each option
-    $edidURL = "/internship_blog/admin/$page/$url";
+    $editURL = "/internship_blog/admin/$page/$url";
     $deleteURL = "/internship_blog/admin/delete/$url";
 
     //Make a hyperlink and add it to an array
@@ -106,6 +106,34 @@ function adminlinks($page, $url)
     $admin['delete'] = "<a href=\"$deleteURL\">delete</a>";
 
     return $admin;
+}
+
+function confirmDElete($db, $url)
+{
+    $entry = retrieveEntries($db, '',$url);
+
+    return <<<FORM
+<form action="/internship_blog/admin.php" method="post">
+    <fieldset>
+        <legend>Are You Sure?</legend>
+        <p>Are you sure you want to delete the entry "$entry[entry_title]"?</p>
+        <input type="submit" name="submit" value="Yes" />
+        <input type="submit" name="submit" value="No" />
+        <input type="hidden" name="action" value="delete" />
+        <input type="hidden" name="url" value="$url" />
+    </fieldset>
+</form>
+FORM;
+
+}
+
+function deleteEntry($db, $url)
+{
+    $sql = "DELETE FROM entries
+            WHERE url=?
+            LIMIT 1";
+    $stmt = $db->prepare($sql);
+    return $stmt->execute(array($url));
 }
 
 ?>
