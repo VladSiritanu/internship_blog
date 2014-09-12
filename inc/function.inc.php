@@ -5,7 +5,7 @@ function retrieveEntries($db,$page, $url=NULL)
     //If an entry URL was supplied, load the associated entry
     if(isset($url))
     {
-       $sql = "SELECT entry_id,page,entry_title,entry_text
+       $sql = "SELECT entry_id,page,entry_title,image,entry_text
                 FROM entries
                 WHERE url=?
                 LIMIT 1";
@@ -134,6 +134,18 @@ function deleteEntry($db, $url)
             LIMIT 1";
     $stmt = $db->prepare($sql);
     return $stmt->execute(array($url));
+}
+
+function formatImage($img=NULL, $alt=NULL)
+{
+    if(isset($img) and $img != "")
+    {
+        return '<img src="' . $img . '" alt="' . $alt .'" />';
+    }
+    else
+    {
+        return NULL;
+    }
 }
 
 ?>

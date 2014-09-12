@@ -45,7 +45,7 @@
 </head>
 
 <body>
-    <h1>Simple Blog Application</h1>
+    <h1 >Simple Blog Application</h1>
 
     <ul id="menu">
         <li><a href="/internship_blog/blog/">Blog</a> </li>
@@ -62,9 +62,13 @@
 
                 //Build the admin lings
                 $admin = adminlinks($page,$url);
+
+                //Format the image if one exists
+
+                $img = formatImage($entries['image'], $entries['entry_title']);
              ?>
-                <h2><?php echo $entries['entry_title']?></h2>
-                <p><?php echo $entries['entry_text'] ?></p>
+                <h2 align="center"><?php echo $entries['entry_title']?></h2>
+                <p><?php echo $img, $entries['entry_text'] ?></p>
                 <p>
                     <?php echo $admin['edit'] ?>
                     <?php if($page=='blog') echo $admin['delete'] ?>
