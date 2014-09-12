@@ -138,7 +138,7 @@ function deleteEntry($db, $url)
 
 function formatImage($img=NULL, $alt=NULL)
 {
-    if(isset($img) and $img != "")
+    if(!empty($img))
     {
         return '<img src="' . $img . '" alt="' . $alt .'" />';
     }
