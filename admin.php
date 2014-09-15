@@ -1,5 +1,8 @@
 <?php
+session_start();
 
+//If the user is logged in, we can continue
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == 1):
 //Include the necessaty files
 include_once 'inc/function.inc.php';
 include_once 'inc/db.inc.php';
@@ -51,7 +54,7 @@ if(isset($_GET['url']))
         $confirm = confirmDelete($db,$url);
     }
 
-    //Set the leden of the form
+    //Set the legend of the form
     $legend = "Edit This Entry";
 
     //Load the entry to be edited
@@ -64,6 +67,12 @@ if(isset($_GET['url']))
 }
 else
 {
+    //Check if we're creating a new user
+    if($page == 'create_user')
+    {
+        $create = createUserForm();
+    }
+
     //Set the legend
     $legend = "New Entry Submission";
 
@@ -97,6 +106,10 @@ else
         {
             echo $confirm;
         }
+        elseif($page == 'create_user'):
+        {
+            echo $create;
+        }
         else:
 
     ?>
@@ -127,3 +140,41 @@ else
 
 </html>
 
+<?php
+    /*
+     * If we get here, the user is no logged in. Display a for
+     * and ask them to log in.
+     */
+    else:
+    ?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0  Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html;charset=utf-8"/>
+    <link rel="stylesheet" href="/internship_blog/css/default.css" type="text/css"/>
+    <title>Please Log In!</title>
+</head>
+
+<body>
+    <form action="/internship_blog/inc/update.inc.php"
+          method="post"
+          enctype="multipart/form-data">
+        <fieldset>
+            <legend>Please Log In To Continue</legend>
+            <label>Username
+                <input type="text" name="username" maxlength="75" />
+            </label>
+            <label>Password
+                <input type="password" name="password" maxlength="150"/>
+            </label>
+            <input type="hidden" name="action" value="login" />
+            <input type="submit" name="submit" value="Log In" />
+        </fieldset>
+          </form>
+</body>
+</html>
+<?php endif; //Ends the section available to logged in users ?>

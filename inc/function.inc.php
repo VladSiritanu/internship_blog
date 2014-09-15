@@ -5,7 +5,7 @@ function retrieveEntries($db,$page, $url=NULL)
     //If an entry URL was supplied, load the associated entry
     if(isset($url))
     {
-       $sql = "SELECT entry_id,page,entry_title,image,entry_text
+       $sql = "SELECT entry_id,page,entry_title,image,entry_text,entry_date
                 FROM entries
                 WHERE url=?
                 LIMIT 1";
@@ -15,6 +15,7 @@ function retrieveEntries($db,$page, $url=NULL)
 
         //Save the returned entry array
         $result = $stmt->fetch();
+//        echo $url;
 
         //Set the fulldisp flag for a single entry
         $fulldisp = 1;
@@ -25,13 +26,14 @@ function retrieveEntries($db,$page, $url=NULL)
     else
     {
         // Query text
-        $sql = "SELECT entry_id,page,entry_title,entry_text,url
+        $sql = "SELECT entry_id,page,entry_title,entry_text,url,entry_date
                 FROM entries
                 WHERE page=?
                 ORDER BY entry_date DESC";
         $stmt = $db->prepare($sql);
         $stmt->execute(array($page));
         $result = NULL;
+
         // Loop through returned results and store as an array
        while($row = $stmt->fetch())
        {
@@ -84,15 +86,15 @@ function sanitizeData($data)
     }
 }
 
-function makeURL($title)
-{
+function makeURL($title,$id) {
+
     $patterns = array(
         '/\s+/',
         '/(?!-)\W+/'
     );
     $replacements = array('-','');
-    return preg_replace($patterns,$replacements,strtolower($title));
 
+    return preg_replace($patterns,$replacements,strtolower($title)) . $id;
 }
 
 function adminlinks($page, $url)
@@ -148,4 +150,25 @@ function formatImage($img=NULL, $alt=NULL)
     }
 }
 
+function createUserForm()
+{
+    return <<<FORM
+<form action="/internship_blog/inc/update.inc.php" method="post">
+    <fieldset>
+        <legend>Create a New Administrator</legend>
+        <label>Username
+            <input type="text" name="username" maxlength="75" />
+        </label>
+        <label>Password
+            <input type="password" name="password" />
+        </label>
+        <input type="submit" name="submit" value="Create" />
+        <input type="submit" name="submit" value="Cancel" />
+        <input type="hidden" name="action" value="create_user" />
+    </fieldset>
+</form>
+FORM;
+
+}
 ?>
+
