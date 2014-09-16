@@ -7,7 +7,7 @@ h1{
 }
 
 ul#menu{
-    width: 350px;
+    width: 450px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -29,7 +29,7 @@ ul#menu > li > a {
 #control_panel, #entries, fieldset{
     width: 350px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
     font-family: helvetica, sans-serif;
 }
 

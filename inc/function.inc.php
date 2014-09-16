@@ -167,6 +167,59 @@ FORM;
 </form>
 FORM;
   }
+
+  function createRegisterForm ($error){
+
+    return <<<FORM
+<!DOCTYPE html
+      PUBLIC "-//W3C//DTD XHTML 1.0  Strict//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+  <meta http-equiv="Content-Type"
+        content="text/html;charset=utf-8"/>
+
+  <link rel="stylesheet" href="/internship_blog/css/default.css"
+        type="text/css"/>
+
+  <title>Please Log In!</title>
+</head>
+
+<body>
+  <form action="/internship_blog/inc/update.inc.php" method="post">
+    <fieldset>
+      <legend>Register</legend>$error
+      <label>Username*
+        <input type="text" name="username" maxlength="75">
+      </label>
+      <label>First Name
+        <input type="text" name="f_name" maxlength="150">
+      </label>
+      <label>Surname
+        <input type="text" name="surname" maxlength="150">
+      </label>
+      <label>Email
+        <input type="text" name="email" maxlength="150">
+      </label>
+      <label>Password*
+        <input type="password" name="password" >
+      </label>
+      <label>Confirm password*
+        <input type="password" name="confirm_password">
+      </label>
+      <input type="submit" name="submit" value="Create" />
+      <input type="submit" name="submit" value="Cancel" />
+      <input type="hidden" name="action" value="register" />
+    </fieldset>
+  </form>
+</body>
+</html>
+FORM;
+  }
 ?>
+
+
 
 

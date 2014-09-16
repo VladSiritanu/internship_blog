@@ -77,10 +77,19 @@
           Add admin
         </a>
       </li>
+      <li><a href="/internship_blog/inc/account.inc.php">
+          Account Setings
+      </a>
+      </li>
     <?php else : ?>
       <li><a href="/internship_blog/admin/">
           Log In
         </a>
+      </li>
+      <li><a href="/internship_blog/admin/register">
+          Register
+      </a>
+
       </li>
     <?php endif; ?>
   </ul>

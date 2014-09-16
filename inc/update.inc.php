@@ -138,7 +138,7 @@
     header('Location: ' . $loc);
     exit;
   }
-  // If the delete ling is clicked on a comment, confirm it here.
+  // If the delete link is clicked on a comment, confirm it here.
   elseif ($_GET['action'] == 'comment_delete') {
 
     // Include and instantiate the Comments class.
@@ -207,7 +207,9 @@
       $response = $stmt->fetch();
       if ($response['num_users'] > 0) {
 
-        $_SESSION['loggedin'] =1;
+        $_SESSION['loggedin'] = 1;
+        $_SESSION['username'] = $_POST['username'];
+        $_SESSION['pass'] = $_POST['password'];
         unset($_SESSION['error']);
       }
       else {
@@ -239,6 +241,55 @@
       $_POST['password']
     ));
 
+    header('Location: /internship_blog');
+    exit;
+  }
+  // If an new user is being created
+  else if ($_SERVER['REQUEST_METHOD'] == 'POST'
+      && $_POST['action'] == 'register'
+      && !empty($_POST['username'])
+      && !empty($_POST['password'])
+      && !empty($_POST['confirm_password'])) {
+
+    if($_POST['password'] !== $_POST['confirm_password']) {
+
+      $_SESSION['error'] = 1;
+      header('Location: /internship_blog/admin/register/');
+      exit;
+    }
+    $fname = null;
+    $surname = null;
+    $email = null;
+
+    if(!empty($_POST['f_name'])) {
+
+      $fname = $_POST['f_name'];
+    }
+
+    if(!empty($_POST['surname'])) {
+
+      $surname = $_POST['surname'];
+    }
+
+
+    if(!empty($_POST['email'])) {
+
+      $email = $_POST['email'];
+    }
+
+    include_once 'db.inc.php';
+    $db = new PDO(DB_INFO,DB_USER,DB_PASS);
+    $sql = "INSERT INTO admin (username, password, first_name, surname, email)
+            VALUES (?,SHA1(?),?,?,?)";
+    $stmt = $db->prepare($sql);
+    $stmt->execute(array(
+        $_POST['username'],
+        $_POST['password'],
+        $fname,
+        $surname,
+        $email
+    ));
+    unset($_SESSION['error']);
     header('Location: /internship_blog');
     exit;
   }

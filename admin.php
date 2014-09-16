@@ -150,9 +150,37 @@
    * and ask them to log in.
    */
    else:
+     $page = NULL;
+     if(isset($_GET['page'])){
+
+       $page = htmlentities(strip_tags($_GET['page']));
+     }
+     if($page == 'register'){
+       include_once 'inc/function.inc.php';
+       $errors = array(
+           1 => '<p class="error">
+                  Password and confirm password do not match.
+                  Please try again!
+                  </p>'
+
+       );
+
+       if (isset($_SESSION['error'])) {
+
+         $error = $errors[$_SESSION['error']];
+       }
+       else {
+
+         $error = NULL;
+       }
+       $register = createRegisterForm($error);
+       echo $register;
+       exit;
+     }
+
      $errors = array(
          1 => '<p class="error">
-                  Password or/adn username wrong.
+                  Password and username wrong.
                   Please try again!
                   </p>'
 
