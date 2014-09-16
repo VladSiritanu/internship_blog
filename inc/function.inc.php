@@ -1,117 +1,115 @@
 <?php
 
-function retrieveEntries($db,$page, $url=NULL)
-{
-    //If an entry URL was supplied, load the associated entry
-    if(isset($url))
-    {
-       $sql = "SELECT entry_id,page,entry_title,image,entry_text,entry_date
+  function retrieveEntries ($db,$page, $url=NULL) {
+
+    // If an entry URL was supplied, load the associated entry.
+    if (isset($url)) {
+
+      $sql = "SELECT entry_id,page,entry_title,image,entry_text,entry_date
                 FROM entries
                 WHERE url=?
                 LIMIT 1";
 
-        $stmt = $db->prepare($sql);
-        $stmt->execute(array($url));
 
-        //Save the returned entry array
-        $result = $stmt->fetch();
-//        echo $url;
+      $stmt = $db->prepare($sql);
+      $stmt->execute(array($url));
 
-        //Set the fulldisp flag for a single entry
-        $fulldisp = 1;
+      // Save the returned entry array.
+      $result = $stmt->fetch();
 
+      // Set the fulldisp flag for a single entry.
+      $fulldisp = 1;
     }
+    // If no entry URL was supplied, load all entry titles for the page.
+    else {
 
-    //If no entry URL was supplied, load all entry titles for the page
-    else
-    {
-        // Query text
-        $sql = "SELECT entry_id,page,entry_title,entry_text,url,entry_date
-                FROM entries
-                WHERE page=?
-                ORDER BY entry_date DESC";
-        $stmt = $db->prepare($sql);
-        $stmt->execute(array($page));
-        $result = NULL;
+      // Query text.
+      $sql = "SELECT entry_id,page,entry_title,entry_text,url,entry_date
+              FROM entries
+              WHERE page=?
+              ORDER BY entry_date DESC";
+      $stmt = $db->prepare($sql);
+      $stmt->execute(array($page));
+      $result = NULL;
 
-        // Loop through returned results and store as an array
-       while($row = $stmt->fetch())
-       {
-           if($page=='blog')
-           {
-           $result[] = $row;
-           $fulldisp = 0;
-           }
-           else
-           {
-               $result = $row;
-               $fulldisp = 1;
-           }
-       }
+      // Loop through returned results and store as an array.
+      while ($row = $stmt->fetch()) {
 
+        if ($page=='blog') {
 
-        //IF no entries were returned, display a default
-        //messafe and set fulldisp flag to display a
-        //single entry
-        if(!is_array($result))
-        {
-            $fulldisp = 1;
-            $result= array(
-                        'entry_title' => 'No Entries Yet',
-                        'entry_text' => '<a href="/internship_blog/admin.php?page=' . $page . '">Post an entry!</a>'
-            );
+          $result[] = $row;
+          $fulldisp = 0;
         }
+        else {
 
+          $result = $row;
+          $fulldisp = 1;
+        }
+      }
+
+
+      // If no entries were returned, display a default message and set fulldisp
+      // flag to display a single entry.
+      if (!is_array($result)) {
+
+        $fulldisp = 1;
+        $result= array(
+          'entry_title' => 'No Entries Yet',
+          'entry_text' => '<a href="/internship_blog/admin.php?page=' . $page
+              . '">Post an entry!</a>'
+        );
+      }
     }
 
-    //Add the $fulldisp flag to the end of the array
+    // Add the $fulldisp flag to the end of the array.
     array_push($result,$fulldisp);
+
     return $result;
+  }
 
-}
+  function sanitizeData ($data) {
 
-function sanitizeData($data)
-{
-    //If $data is not an array, tun strip_tags()
-    if(!is_array($data))
-    {
-        //Remove all tags except <a> tags
-        return strip_tags($data,"<a><br>");
+    // If $data is not an array, tun strip_tags().
+    if (!is_array($data)) {
+
+      // Remove all tags except <a> tags.
+
+      return strip_tags($data,"<a><br>");
     }
-    //If $data is an array, process each element
-    else
-    {
-        //Call sanitizeData recursively fot each array element
-        return array_map('sanitizeData',$data);
-    }
-}
+    // If $data is an array, process each element.
+    else {
 
-function makeURL($title,$id) {
+      // Call sanitizeData recursively fot each array element.
+      return array_map('sanitizeData',$data);
+    }
+  }
+
+  function makeURL ($title,$id) {
 
     $patterns = array(
-        '/\s+/',
-        '/(?!-)\W+/'
+      '/\s+/',
+      '/(?!-)\W+/'
     );
     $replacements = array('-','');
 
     return preg_replace($patterns,$replacements,strtolower($title)) . $id;
-}
+  }
 
-function adminlinks($page, $url)
-{
-    //Format the link to be followed for each option
+  function adminlinks ($page, $url) {
+
+    // Format the link to be followed for each option.
     $editURL = "/internship_blog/admin/$page/$url";
     $deleteURL = "/internship_blog/admin/delete/$url";
 
-    //Make a hyperlink and add it to an array
+    // Make a hyperlink and add it to an array.
     $admin['edit'] = "<a href=\"$editURL\">edit</a>";
     $admin['delete'] = "<a href=\"$deleteURL\">delete</a>";
 
     return $admin;
-}
+  }
 
-function confirmDElete($db, $url)
-{
+  function confirmDElete ($db, $url) {
+
     $entry = retrieveEntries($db, '',$url);
 
     return <<<FORM
@@ -126,32 +124,32 @@ function confirmDElete($db, $url)
     </fieldset>
 </form>
 FORM;
+  }
 
-}
+  function deleteEntry ($db, $url) {
 
-function deleteEntry($db, $url)
-{
     $sql = "DELETE FROM entries
             WHERE url=?
             LIMIT 1";
     $stmt = $db->prepare($sql);
+
     return $stmt->execute(array($url));
-}
+  }
 
-function formatImage($img=NULL, $alt=NULL)
-{
-    if(!empty($img))
-    {
-        return '<img src="' . $img . '" alt="' . $alt .'" />';
-    }
-    else
-    {
-        return NULL;
-    }
-}
+  function formatImage($img=NULL, $alt=NULL) {
 
-function createUserForm()
-{
+    if (!empty($img)) {
+
+      return '<img src="' . $img . '" alt="' . $alt .'" />';
+    }
+    else {
+
+      return NULL;
+    }
+  }
+
+  function createUserForm () {
+
     return <<<FORM
 <form action="/internship_blog/inc/update.inc.php" method="post">
     <fieldset>
@@ -168,7 +166,7 @@ function createUserForm()
     </fieldset>
 </form>
 FORM;
-
-}
+  }
 ?>
+
 

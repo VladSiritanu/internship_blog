@@ -1,3 +1,4 @@
+
 h1{
     width: 380px;
     margin: 0 auto 20px;
@@ -22,6 +23,7 @@ ul#menu > li > a {
     background: #333;
     font-family: helvetica,sans-serif;
     text-decoration: none;
+    list-style: none;
 }
 
 #control_panel, #entries, fieldset{
