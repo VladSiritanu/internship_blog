@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a6debf1-ef03-4f0f-b5aa-00e4eaec490e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/account.inc.php" afterPath="$PROJECT_DIR$/inc/account.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/update.inc.php" afterPath="$PROJECT_DIR$/inc/update.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="internship_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="29" selection-start="1149" selection-end="1149" vertical-scroll-proportion="1.3691275" vertical-offset="255" max-vertical-offset="4131">
+            <state line="51" column="29" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-12.0" vertical-offset="255" max-vertical-offset="4131">
               <folding>
                 <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
                 <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
@@ -41,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.inc.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="update.inc.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="16" selection-start="3585" selection-end="3589" vertical-scroll-proportion="19.984127" vertical-offset="4899" max-vertical-offset="10244">
+            <state line="213" column="0" selection-start="5743" selection-end="5743" vertical-scroll-proportion="0.63013697" vertical-offset="5262" max-vertical-offset="10140">
               <folding>
-                <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-                <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-                <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-                <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-                <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-                <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-                <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-                <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+                <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+                <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+                <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+                <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+                <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+                <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+                <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+                <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
               </folding>
             </state>
           </provider>
@@ -146,8 +143,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/inc/function.inc.php" />
         <option value="$PROJECT_DIR$/inc/account.inc.php" />
-        <option value="$PROJECT_DIR$/inc/update.inc.php" />
         <option value="$PROJECT_DIR$/admin.php" />
+        <option value="$PROJECT_DIR$/inc/update.inc.php" />
       </list>
     </option>
   </component>
@@ -264,7 +261,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -330,14 +327,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="210" column="27" selection-start="5626" selection-end="5634" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="5423">
           <folding>
-            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -411,14 +408,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="53" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="4267">
           <folding>
-            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -486,14 +483,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="78" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1870">
           <folding>
-            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -543,14 +540,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="57" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1292">
           <folding>
-            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -593,14 +590,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="782">
           <folding>
-            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -703,22 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="16" selection-start="3585" selection-end="3589" vertical-scroll-proportion="19.984127" vertical-offset="4899" max-vertical-offset="10244">
-          <folding>
-            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
-            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
-            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="114" column="24" selection-start="2670" selection-end="2670" vertical-scroll-proportion="-1.506329" vertical-offset="2161" max-vertical-offset="4200">
@@ -755,11 +736,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="29" selection-start="1149" selection-end="1149" vertical-scroll-proportion="1.3691275" vertical-offset="255" max-vertical-offset="4131">
+        <state line="51" column="29" selection-start="1149" selection-end="1149" vertical-scroll-proportion="-12.0" vertical-offset="255" max-vertical-offset="4131">
           <folding>
             <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
             <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
             <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="213" column="0" selection-start="5743" selection-end="5743" vertical-scroll-proportion="0.63013697" vertical-offset="5262" max-vertical-offset="10140">
+          <folding>
+            <marker date="1410949600319" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410949600319" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410949600319" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410949600319" expanded="true" signature="6335:6404" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="7373:7476" placeholder="INSERT INTO ..." />
+            <marker date="1410949600319" expanded="true" signature="8346:8509" placeholder="UPDATE admin..." />
+            <marker date="1410949600319" expanded="true" signature="9345:9480" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>

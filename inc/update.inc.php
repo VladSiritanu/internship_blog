@@ -211,11 +211,7 @@
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['pass'] = $_POST['password'];
         unset ($_SESSION['error']);
-//        var_dump($_SERVER['HTTP_REFERER']); die;
-        if (!empty($_SERVER['HTTP_REFERER'])) {
-          header('Location: ' . $_SERVER['HTTP_REFERER']);
-          exit;
-        }
+
 
       }
       else {
