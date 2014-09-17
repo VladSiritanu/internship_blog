@@ -210,7 +210,13 @@
         $_SESSION['loggedin'] = 1;
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['pass'] = $_POST['password'];
-        unset($_SESSION['error']);
+        unset ($_SESSION['error']);
+//        var_dump($_SERVER['HTTP_REFERER']); die;
+        if (!empty($_SERVER['HTTP_REFERER'])) {
+          header('Location: ' . $_SERVER['HTTP_REFERER']);
+          exit;
+        }
+
       }
       else {
 
@@ -301,6 +307,75 @@
     header('Location: ../');
     exit;
 
+  }
+  else if ($_SERVER['REQUEST_METHOD'] == 'POST'
+          && $_POST['action'] == 'acc_update') {
+    $old_username = $_SESSION['username'];
+    $password = $_SESSION['pass'];
+
+    $username = $_POST['username'];
+    $fname = $_POST['f_name'];
+    $surname = $_POST['surname'];
+    $email = $_POST['email'];
+
+    if ($_POST['submit'] =='Submit') {
+
+      include_once 'db.inc.php';
+      $db = new PDO(DB_INFO,DB_USER,DB_PASS);
+      $sql = "UPDATE admin
+              SET username=?,first_name=?, surname=?, email=?
+              WHERE username=?
+              AND password =SHA1(?)
+              LIMIT 1";
+      $stmt = $db->prepare($sql);
+      $stmt->execute(array(
+              $username,
+              $fname,
+              $surname,
+              $email,
+              $old_username,
+              $password
+          )
+      );
+
+      $stmt->closeCursor();
+      header('Location: /internship_blog/inc/account.inc.php');
+      $_SESSION['username'] = $username;
+    }
+  }
+  elseif ($_POST['action'] =='change_pass'
+          && $_POST['submit'] =='Change') {
+    $password = $_SESSION['pass'];
+    $old_pass = $_POST['old_pass'];
+    $new_pass = $_POST['new_pass'];
+    if ($old_pass !== $password) {
+
+      $_SESSION['error'] = 1;
+      header('Location: /internship_blog/inc/account.inc.php?page=ch_pass');
+      exit;
+    }
+    else {
+
+      include_once 'db.inc.php';
+      $db = new PDO(DB_INFO,DB_USER,DB_PASS);
+      $sql = "UPDATE admin
+              SET password=SHA1(?)
+              WHERE username=?
+              AND password=SHA1(?)
+              LIMIT 1";
+      $stmt = $db->prepare($sql);
+      $stmt->execute(array(
+              $new_pass,
+              $_SESSION['username'],
+              $password
+          )
+      );
+      $stmt->closeCursor();
+      $_SESSION['pass'] = $new_pass;
+
+      header('Location: /internship_blog/inc/account.inc.php');
+
+    }
   }
   // If any of the condition aren't met, send the user to the main page.
   else {

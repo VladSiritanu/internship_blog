@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a6debf1-ef03-4f0f-b5aa-00e4eaec490e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/account.inc.php" afterPath="$PROJECT_DIR$/inc/account.inc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin.php" afterPath="$PROJECT_DIR$/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css" afterPath="$PROJECT_DIR$/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/function.inc.php" afterPath="$PROJECT_DIR$/inc/function.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/update.inc.php" afterPath="$PROJECT_DIR$/inc/update.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="internship_blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,14 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="admin.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="0" selection-start="4950" selection-end="4950" vertical-scroll-proportion="-34.53448" vertical-offset="2845" max-vertical-offset="5832">
+            <state line="51" column="29" selection-start="1149" selection-end="1149" vertical-scroll-proportion="1.3691275" vertical-offset="255" max-vertical-offset="4131">
               <folding>
-                <marker date="1410876704527" expanded="true" signature="4055:4107" placeholder="..." />
-                <marker date="1410876704527" expanded="true" signature="4055:4176" placeholder="..." />
-                <marker date="1410876704527" expanded="true" signature="4480:4586" placeholder="..." />
+                <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+                <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+                <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -45,14 +44,16 @@
       <file leaf-file-name="update.inc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="27" selection-start="5626" selection-end="5634" vertical-scroll-proportion="19.4" vertical-offset="6624" max-vertical-offset="8294">
+            <state line="140" column="16" selection-start="3585" selection-end="3589" vertical-scroll-proportion="19.984127" vertical-offset="4899" max-vertical-offset="10244">
               <folding>
-                <marker date="1410877678982" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-                <marker date="1410877678982" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-                <marker date="1410877678982" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-                <marker date="1410877678982" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-                <marker date="1410877678982" expanded="true" signature="6332:6401" placeholder="INSERT INTO ..." />
-                <marker date="1410877678982" expanded="true" signature="7370:7473" placeholder="INSERT INTO ..." />
+                <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+                <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+                <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+                <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+                <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+                <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+                <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+                <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
               </folding>
             </state>
           </provider>
@@ -61,7 +62,7 @@
       <file leaf-file-name="function.inc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/function.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="204" column="14" selection-start="4925" selection-end="5201" vertical-scroll-proportion="-22.441177" vertical-offset="4337" max-vertical-offset="5775">
+            <state line="97" column="11" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-6.0384617" vertical-offset="1492" max-vertical-offset="3927">
               <folding>
                 <marker date="1410876529043" expanded="true" signature="162:303" placeholder="SELECT entry..entries..." />
                 <marker date="1410876529043" expanded="true" signature="649:800" placeholder="SELECT entry..entries..." />
@@ -74,23 +75,22 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="5" selection-start="2334" selection-end="2334" vertical-scroll-proportion="36.873016" vertical-offset="5281" max-vertical-offset="6090">
+            <state line="114" column="24" selection-start="2670" selection-end="2670" vertical-scroll-proportion="-1.506329" vertical-offset="2161" max-vertical-offset="4200">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="account.inc.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="account.inc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/account.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="18" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.45070422" vertical-offset="1056" max-vertical-offset="2400">
+            <state line="114" column="58" selection-start="2756" selection-end="2756" vertical-scroll-proportion="-76.63636" vertical-offset="207" max-vertical-offset="3216">
               <folding>
-                <marker date="1410880350812" expanded="true" signature="213:301" placeholder="SELECT * FRO..admin..." />
-                <marker date="1410880350812" expanded="true" signature="213:269" placeholder="SELECT * FRO..admi..." />
-                <marker date="1410880350812" expanded="true" signature="213:269" placeholder="SELECT * FRO..admin..." />
-                <marker date="1410880350812" expanded="true" signature="213:269" placeholder="SELECT * FRO..admin..." />
-                <marker date="1410880350812" expanded="true" signature="1741:1769" placeholder="..." />
-                <marker date="1410880350812" expanded="true" signature="1880:1906" placeholder="..." />
+                <marker date="1410942037127" expanded="true" signature="213:269" placeholder="SELECT * FRO..admi..." />
+                <marker date="1410942037127" expanded="true" signature="213:301" placeholder="SELECT * FRO..admin..." />
+                <marker date="1410942037127" expanded="true" signature="597:703" placeholder="..." />
+                <marker date="1410942037127" expanded="true" signature="2088:2116" placeholder="..." />
+                <marker date="1410942037127" expanded="true" signature="2227:2253" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -99,7 +99,7 @@
       <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="-13.44" vertical-offset="414" max-vertical-offset="2600">
+            <state line="30" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1768">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,7 @@
       <file leaf-file-name="comment.inc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/comment.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="5" selection-start="512" selection-end="1073" vertical-scroll-proportion="3.5490196" vertical-offset="606" max-vertical-offset="6290">
+            <state line="238" column="47" selection-start="6576" selection-end="6582" vertical-scroll-proportion="-2.9215686" vertical-offset="3897" max-vertical-offset="6290">
               <folding>
                 <marker date="1410856932620" expanded="true" signature="562:686" placeholder="..." />
                 <marker date="1410856932620" expanded="true" signature="722:799" placeholder="..." />
@@ -142,20 +142,26 @@
         <option value="$PROJECT_DIR$/inc/comment.inc.php" />
         <option value="$PROJECT_DIR$/inc/db.inc.php" />
         <option value="$PROJECT_DIR$/inc/image.inc.php" />
-        <option value="$PROJECT_DIR$/inc/function.inc.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/inc/update.inc.php" />
         <option value="$PROJECT_DIR$/css/default.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/inc/function.inc.php" />
         <option value="$PROJECT_DIR$/inc/account.inc.php" />
+        <option value="$PROJECT_DIR$/inc/update.inc.php" />
+        <option value="$PROJECT_DIR$/admin.php" />
       </list>
+    </option>
+  </component>
+  <component name="PhpServers">
+    <option name="servers">
+      <server host="testvlad.com" name="testvlad.com" />
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -171,7 +177,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -182,78 +188,14 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="feeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="internship_blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="FullScreen" value="false" />
     <property name="SearchEverywhereHistory" value="$po&#10;?&#10;&lt;d" />
-    <property name="options.lastSelected" value="preferences.sourceCode.PHP" />
+    <property name="options.lastSelected" value="Configurable.PHP.Debug" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -322,17 +264,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43473572" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43473572" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23725055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35254988" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.399137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43578485" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -341,8 +283,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -359,16 +301,108 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/inc/function.inc.php</url>
+          <line>5</line>
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="0" selection-start="4950" selection-end="4950" vertical-scroll-proportion="0.0" vertical-offset="3434" max-vertical-offset="4131">
+          <folding>
+            <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="27" selection-start="5626" selection-end="5634" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="5423">
+          <folding>
+            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/function.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="204" column="14" selection-start="4925" selection-end="5201" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="3927">
+          <folding>
+            <marker date="1410876529043" expanded="true" signature="162:303" placeholder="SELECT entry..entries..." />
+            <marker date="1410876529043" expanded="true" signature="649:800" placeholder="SELECT entry..entries..." />
+            <marker date="1410876529043" expanded="true" signature="3288:3351" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="5" selection-start="2334" selection-end="2334" vertical-scroll-proportion="0.0" vertical-offset="1734" max-vertical-offset="3570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/account.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="18" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="1700">
+          <folding>
+            <marker date="1410942037127" expanded="true" signature="213:269" placeholder="SELECT * FRO..admi..." />
+            <marker date="1410942037127" expanded="true" signature="213:301" placeholder="SELECT * FRO..admin..." />
+            <marker date="1410942037127" expanded="true" signature="597:703" placeholder="..." />
+            <marker date="1410942037127" expanded="true" signature="2088:2116" placeholder="..." />
+            <marker date="1410942037127" expanded="true" signature="2227:2253" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/comment.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="5" selection-start="512" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="606" max-vertical-offset="6290">
+          <folding>
+            <marker date="1410856932620" expanded="true" signature="562:686" placeholder="..." />
+            <marker date="1410856932620" expanded="true" signature="722:799" placeholder="..." />
+            <marker date="1410856932620" expanded="true" signature="835:921" placeholder="..." />
+            <marker date="1410856932620" expanded="true" signature="3473:3565" placeholder="INSERT INTO ..." />
+            <marker date="1410856932620" expanded="true" signature="4635:4790" placeholder="Select comm_..comments..." />
+            <marker date="1410856932620" expanded="true" signature="6177:6306" placeholder="..." />
+            <marker date="1410856932620" expanded="true" signature="8315:8401" placeholder="DELETE FROM ..." />
+            <marker date="1410856932620" expanded="true" signature="9148:9325" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="20" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="3162">
           <folding>
-            <marker date="1410876704527" expanded="true" signature="4055:4107" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4055:4176" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4480:4586" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -377,12 +411,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="53" selection-start="1742" selection-end="1742" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="4267">
           <folding>
-            <marker date="1410877678982" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410877678982" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410877678982" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410877678982" expanded="true" signature="6332:6401" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="7370:7473" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -439,9 +475,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2295">
           <folding>
-            <marker date="1410876704527" expanded="true" signature="4055:4107" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4055:4176" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4480:4586" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -450,12 +486,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="78" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1870">
           <folding>
-            <marker date="1410877678982" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410877678982" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410877678982" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410877678982" expanded="true" signature="6332:6401" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="7370:7473" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -469,9 +507,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feeds/rss.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="6" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408">
-          <folding />
-        </state>
+        <state line="18" column="6" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
@@ -496,9 +532,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="2295">
           <folding>
-            <marker date="1410876704527" expanded="true" signature="4055:4107" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4055:4176" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4480:4586" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -507,12 +543,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="57" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1292">
           <folding>
-            <marker date="1410877678982" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410877678982" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410877678982" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410877678982" expanded="true" signature="6332:6401" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="7370:7473" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -526,9 +564,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221">
-          <folding />
-        </state>
+        <state line="5" column="30" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="221" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/function.inc.php">
@@ -546,9 +582,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="24" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <folding>
-            <marker date="1410876704527" expanded="true" signature="4055:4107" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4055:4176" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4480:4586" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -557,12 +593,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="25" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="782">
           <folding>
-            <marker date="1410877678982" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410877678982" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410877678982" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410877678982" expanded="true" signature="6332:6401" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="7370:7473" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
           </folding>
         </state>
       </provider>
@@ -618,9 +656,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feeds/rss.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="6" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.9099307" vertical-offset="720" max-vertical-offset="1664">
-          <folding />
-        </state>
+        <state line="58" column="6" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.9099307" vertical-offset="720" max-vertical-offset="1664" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/db.inc.php">
@@ -639,9 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="54" selection-start="101" selection-end="101" vertical-scroll-proportion="0.03773585" vertical-offset="0" max-vertical-offset="901">
-          <folding />
-        </state>
+        <state line="2" column="54" selection-start="101" selection-end="101" vertical-scroll-proportion="0.03773585" vertical-offset="0" max-vertical-offset="901" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/french_tricolour-1920x1080.jpg">
@@ -649,9 +683,63 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/account.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="58" selection-start="2756" selection-end="2756" vertical-scroll-proportion="-76.63636" vertical-offset="207" max-vertical-offset="3216">
+          <folding>
+            <marker date="1410942037127" expanded="true" signature="213:269" placeholder="SELECT * FRO..admi..." />
+            <marker date="1410942037127" expanded="true" signature="213:301" placeholder="SELECT * FRO..admin..." />
+            <marker date="1410942037127" expanded="true" signature="597:703" placeholder="..." />
+            <marker date="1410942037127" expanded="true" signature="2088:2116" placeholder="..." />
+            <marker date="1410942037127" expanded="true" signature="2227:2253" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="16" selection-start="3585" selection-end="3589" vertical-scroll-proportion="19.984127" vertical-offset="4899" max-vertical-offset="10244">
+          <folding>
+            <marker date="1410944560063" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
+            <marker date="1410944560063" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
+            <marker date="1410944560063" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
+            <marker date="1410944560063" expanded="true" signature="6518:6587" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="7556:7659" placeholder="INSERT INTO ..." />
+            <marker date="1410944560063" expanded="true" signature="8529:8692" placeholder="UPDATE admin..." />
+            <marker date="1410944560063" expanded="true" signature="9528:9663" placeholder="UPDATE admin..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="24" selection-start="2670" selection-end="2670" vertical-scroll-proportion="-1.506329" vertical-offset="2161" max-vertical-offset="4200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/function.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="11" selection-start="2298" selection-end="2298" vertical-scroll-proportion="-6.0384617" vertical-offset="1492" max-vertical-offset="3927">
+          <folding>
+            <marker date="1410876529043" expanded="true" signature="162:303" placeholder="SELECT entry..entries..." />
+            <marker date="1410876529043" expanded="true" signature="649:800" placeholder="SELECT entry..entries..." />
+            <marker date="1410876529043" expanded="true" signature="3288:3351" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inc/comment.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="512" selection-end="1073" vertical-scroll-proportion="3.5490196" vertical-offset="606" max-vertical-offset="6290">
+        <state line="238" column="47" selection-start="6576" selection-end="6582" vertical-scroll-proportion="-2.9215686" vertical-offset="3897" max-vertical-offset="6290">
           <folding>
             <marker date="1410856932620" expanded="true" signature="562:686" placeholder="..." />
             <marker date="1410856932620" expanded="true" signature="722:799" placeholder="..." />
@@ -665,66 +753,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inc/function.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="204" column="14" selection-start="4925" selection-end="5201" vertical-scroll-proportion="-22.441177" vertical-offset="4337" max-vertical-offset="5775">
-          <folding>
-            <marker date="1410876529043" expanded="true" signature="162:303" placeholder="SELECT entry..entries..." />
-            <marker date="1410876529043" expanded="true" signature="649:800" placeholder="SELECT entry..entries..." />
-            <marker date="1410876529043" expanded="true" signature="3288:3351" placeholder="DELETE FROM ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/update.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="27" selection-start="5626" selection-end="5634" vertical-scroll-proportion="19.4" vertical-offset="6624" max-vertical-offset="8294">
-          <folding>
-            <marker date="1410877678982" expanded="true" signature="740:900" placeholder="Select AUTO_..TABLES..." />
-            <marker date="1410877678982" expanded="true" signature="1787:1915" placeholder="UPDATE entri..." />
-            <marker date="1410877678982" expanded="true" signature="2407:2485" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="5247:5366" placeholder="SELECT COUNT..admin..." />
-            <marker date="1410877678982" expanded="true" signature="6332:6401" placeholder="INSERT INTO ..." />
-            <marker date="1410877678982" expanded="true" signature="7370:7473" placeholder="INSERT INTO ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="0" selection-start="4950" selection-end="4950" vertical-scroll-proportion="-34.53448" vertical-offset="2845" max-vertical-offset="5832">
+        <state line="51" column="29" selection-start="1149" selection-end="1149" vertical-scroll-proportion="1.3691275" vertical-offset="255" max-vertical-offset="4131">
           <folding>
-            <marker date="1410876704527" expanded="true" signature="4055:4107" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4055:4176" placeholder="..." />
-            <marker date="1410876704527" expanded="true" signature="4480:4586" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="5" selection-start="2334" selection-end="2334" vertical-scroll-proportion="36.873016" vertical-offset="5281" max-vertical-offset="6090">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="12" selection-start="464" selection-end="464" vertical-scroll-proportion="-13.44" vertical-offset="414" max-vertical-offset="2600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/account.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="18" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.45070422" vertical-offset="1056" max-vertical-offset="2400">
-          <folding>
-            <marker date="1410880350812" expanded="true" signature="213:301" placeholder="SELECT * FRO..admin..." />
-            <marker date="1410880350812" expanded="true" signature="213:269" placeholder="SELECT * FRO..admi..." />
-            <marker date="1410880350812" expanded="true" signature="213:269" placeholder="SELECT * FRO..admin..." />
-            <marker date="1410880350812" expanded="true" signature="213:269" placeholder="SELECT * FRO..admin..." />
-            <marker date="1410880350812" expanded="true" signature="1741:1769" placeholder="..." />
-            <marker date="1410880350812" expanded="true" signature="1880:1906" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4109" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4057:4178" placeholder="..." />
+            <marker date="1410945396765" expanded="true" signature="4482:4588" placeholder="..." />
           </folding>
         </state>
       </provider>

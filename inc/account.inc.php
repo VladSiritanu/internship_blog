@@ -25,6 +25,24 @@
   $surname = $response['surname'];
   $email = $response['email'];
 
+  $errors = array(
+     1 => '<p class="error">
+                      Wrong password!.
+                      Please try again!
+                      </p>'
+
+  );
+
+  if (isset($_SESSION['error'])) {
+
+
+    $error = $errors[$_SESSION['error']];
+  }
+  else {
+
+    $error = NULL;
+  }
+
 ?>
 
 <!DOCTYPE html
@@ -47,6 +65,10 @@
 <h1 >Account settings</h1>
 
 <ul id="menu">
+  <li><a href="/internship_blog/blog/">
+      Blog
+    </a>
+  </li>
   <li><a href="/internship_blog/inc/account.inc.php">
       User Information
     </a>
@@ -82,13 +104,25 @@
       </label>
       <input type="hidden" name="action" value="acc_update" />
       <input type="submit" name="submit" value="Submit" />
-      <input type="submit" name="submit" value="Cancel"/>
     </fieldset>
   </form>
   <?php elseif($page == 'ch_pass'): ?>
   <p id="control_panel">
     Here u can change your password!
   </p>
+  <form action="update.inc.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Change Password</legend><?php echo $error ?>
+      <label>Old Password
+        <input type="password" name="old_pass"/>
+      </label>
+      <label>New Password
+        <input type="password" name="new_pass"/>
+      </label>
+      <input type="hidden" name="action" value="change_pass"/>
+      <input type="submit" name="submit" value="Change"/>
+    </fieldset>
+  </form>
 </div>
 <?php endif; ?>
 </body>

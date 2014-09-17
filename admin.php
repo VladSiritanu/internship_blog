@@ -49,7 +49,7 @@
       // Do basic sanitization of the url variable.
       $url = htmlentities(strip_tags($_GET['url']));
 
-      // Check if the entry should be deleted.
+      // Check if the comment should be deleted.
       if($page == 'delete') {
 
         $confirm = confirmDelete($db,$url);
