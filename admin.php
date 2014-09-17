@@ -64,7 +64,8 @@
       // Save each entry field as individual variables.
       $id = $entry['entry_id'];
       $title = $entry['entry_title'];
-      $entry = $entry['entry_text'];
+      $entry_txt = $entry['entry_text'];
+      $img = $entry['image'];
     }
     else {
 
@@ -80,7 +81,7 @@
       // Set variables to NULL is not editing.
       $id = NULL;
       $title = NULL;
-      $entry = NULL;
+      $entry_txt = NULL;
     }
     ?>
 
@@ -124,17 +125,16 @@
                        value="<?php echo htmlentities($title) ?>"/>
               </label>
               <label>Image
-                <input type="file" name="image"/>
+                <input type="file" name="image" value="<?php echo $img ?>" />
               </label>
               <label>Entry
                 <textarea name="entry" rows="10" cols="45">
-                  <?php echo strip_tags($entry,"<a>") ?>
+                  <?php echo strip_tags($entry_txt,"<a>") ?>
                 </textarea>
               </label>
-              <input type="hidden" name="id"
-                     value="<?php echo $id ?>"/>
-              <input type="hidden" name="page"
-                     value="<?php echo $page ?>" />
+              <input type="hidden" name="img" value="<?php echo $img?>"/>
+              <input type="hidden" name="id" value="<?php echo $id ?>"/>
+              <input type="hidden" name="page" value="<?php echo $page ?>" />
               <input type="submit" name="submit" value="Save Entry"/>
               <input type="submit" name="submit" value="Cancel"/>
             </fieldset>

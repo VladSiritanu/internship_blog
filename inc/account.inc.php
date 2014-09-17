@@ -25,23 +25,33 @@
   $surname = $response['surname'];
   $email = $response['email'];
 
+  $confirm_msg = array(
+    1 => '<p class="confirm_message">
+              User Information Updated!
+          </p>',
+    2 => '<p class="confirm_message">
+              Password Changed!
+          </p>'
+  );
+
+  $confirm = (isset($_SESSION['confirm'])) ? $confirm_msg[$_SESSION['confirm']] : null;
+
   $errors = array(
      1 => '<p class="error">
-                      Wrong password!.
+                      Wrong password!
                       Please try again!
-                      </p>'
+           </p>',
+     2 => '<p class="error">
+                  Passwords do not match!
+                  Please try again!
+           </p>',
+     3 => '<p class="error">
+                Password must have at least 3 chats!
+           </p>',
 
   );
 
-  if (isset($_SESSION['error'])) {
-
-
-    $error = $errors[$_SESSION['error']];
-  }
-  else {
-
-    $error = NULL;
-  }
+  $error = (isset($_SESSION['error'])) ? $errors[$_SESSION['error']] : null;
 
 ?>
 
@@ -85,7 +95,7 @@
         method="post"
         enctype="multipart/form-data">
     <fieldset>
-      <legend>User Information</legend>
+      <legend>User Information</legend><?php echo $confirm ?>
       <label>Username
         <input type="text" name="username" maxlength="75"
                value="<?php echo $_SESSION['username'] ?>" />
@@ -119,11 +129,16 @@
       <label>New Password
         <input type="password" name="new_pass"/>
       </label>
+      <label>Confirm New Password
+        <input type="password" name="confirm_new_password"/>
+      </label>
       <input type="hidden" name="action" value="change_pass"/>
       <input type="submit" name="submit" value="Change"/>
     </fieldset>
   </form>
 </div>
-<?php endif; ?>
+<?php endif;
+  unset($_SESSION['confirm']);
+?>
 </body>
 </html>

@@ -126,7 +126,7 @@
 FORM;
   }
 
-  function deleteEntry ($db, $url) {
+  function deleteEntry($db, $url) {
 
     $sql = "DELETE FROM entries
             WHERE url=?

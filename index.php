@@ -82,9 +82,8 @@
       </a>
       </li>
     <?php else : ?>
-      <li><a href="/internship_blog/admin/">
-          Log In
-        </a>
+      <li>
+        <a href="/internship_blog/admin/">Log In</a>
       </li>
       <li><a href="/internship_blog/admin/register">
           Register

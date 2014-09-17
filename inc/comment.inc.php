@@ -168,7 +168,6 @@ FORM;
           . '(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/i';
 
       // If a match is found, return true, otherwise return false.
-
       return (preg_match($p,$eamil)) ? True : False;
     }
 
@@ -205,7 +204,7 @@ FORM;
     }
 
     // Generates HTML markup for displaying comments.
-    public function showComments ($blog_id) {
+    public function showComments ($blog_id)  {
 
       // Initialize the variable in case no comment exist.
       $display = NULL;
@@ -306,7 +305,12 @@ FORM;
 FORM;
     }
 
-    // Removes the comment corresponding to $id from the data base.
+    /**
+     * Desc
+     *
+     * @param $id
+     * @return bool
+     */
     public function deleteComment ($id) {
 
       $sql = "DELETE FROM comments

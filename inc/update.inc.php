@@ -67,7 +67,10 @@
 
     // Edit an existing entry.
     if (!empty($_POST['id'])) {
+      if(empty($img_path)){
 
+        $img_path = $_POST['img'];
+      }
       $url = makeURL($_POST['title'],$_POST['id']);
       $sql = "UPDATE entries
               SET entry_title=?,image=?, entry_text=?, url=?
@@ -211,8 +214,8 @@
         $_SESSION['username'] = $_POST['username'];
         $_SESSION['pass'] = $_POST['password'];
         unset ($_SESSION['error']);
-
-
+        header('Location: /internship_blog/inc/account.inc.php');
+        exit;
       }
       else {
 
@@ -297,14 +300,14 @@
   }
 
   // If the user has chosen to log out, process it here.
-  else if ($_GET['action'] == 'logout') {
+  elseif ($_GET['action'] == 'logout') {
 
     session_destroy();
     header('Location: ../');
     exit;
 
   }
-  else if ($_SERVER['REQUEST_METHOD'] == 'POST'
+  elseif ($_SERVER['REQUEST_METHOD'] == 'POST'
           && $_POST['action'] == 'acc_update') {
     $old_username = $_SESSION['username'];
     $password = $_SESSION['pass'];
@@ -335,15 +338,16 @@
       );
 
       $stmt->closeCursor();
-      header('Location: /internship_blog/inc/account.inc.php');
       $_SESSION['username'] = $username;
+      $_SESSION['confirm'] = 1;
+      header('Location: /internship_blog/inc/account.inc.php');
     }
   }
-  elseif ($_POST['action'] =='change_pass'
-          && $_POST['submit'] =='Change') {
+  elseif ($_POST['action'] =='change_pass' && $_POST['submit'] =='Change') {
     $password = $_SESSION['pass'];
     $old_pass = $_POST['old_pass'];
     $new_pass = $_POST['new_pass'];
+    $confirm_pass = $_POST['confirm_new_password'];
     if ($old_pass !== $password) {
 
       $_SESSION['error'] = 1;
@@ -352,25 +356,39 @@
     }
     else {
 
-      include_once 'db.inc.php';
-      $db = new PDO(DB_INFO,DB_USER,DB_PASS);
-      $sql = "UPDATE admin
-              SET password=SHA1(?)
-              WHERE username=?
-              AND password=SHA1(?)
-              LIMIT 1";
-      $stmt = $db->prepare($sql);
-      $stmt->execute(array(
-              $new_pass,
-              $_SESSION['username'],
-              $password
-          )
-      );
-      $stmt->closeCursor();
-      $_SESSION['pass'] = $new_pass;
+      if(strlen($new_pass) < 3 ){
 
-      header('Location: /internship_blog/inc/account.inc.php');
+        $_SESSION['error'] = 3;
+        header('Location: /internship_blog/inc/account.inc.php?page=ch_pass');
+        exit;
+      }
+      elseif ($new_pass === $confirm_pass) {
+        include_once 'db.inc.php';
+        $db = new PDO(DB_INFO,DB_USER,DB_PASS);
+        $sql = "UPDATE admin
+                SET password=SHA1(?)
+                WHERE username=?
+                AND password=SHA1(?)
+                LIMIT 1";
+        $stmt = $db->prepare($sql);
+        $stmt->execute(array(
+                $new_pass,
+                $_SESSION['username'],
+                $password
+            )
+        );
+        $stmt->closeCursor();
+        $_SESSION['pass'] = $new_pass;
+        $_SESSION['confirm'] = 2;
+        header('Location: /internship_blog/inc/account.inc.php');
 
+      }
+      else {
+
+        $_SESSION['error'] = 2;
+        header('Location: /internship_blog/inc/account.inc.php?page=ch_pass');
+        exit;
+      }
     }
   }
   // If any of the condition aren't met, send the user to the main page.
